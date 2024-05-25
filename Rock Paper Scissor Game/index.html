@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock Paper Scissors Lizard Spock</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <h1>Rock Paper Scissors Lizard Spock</h1>
+    <div class="forms">
+      <form id="login-form" class="form">
+        <h2>Login</h2>
+        <input type="text" id="login-username" placeholder="Username" required>
+        <input type="password" id="login-password" placeholder="Password" required>
+        <button type="submit">Login</button>
+        <p class="message">Not registered? <a href="#" id="show-signup">Create an account</a></p>
+      </form>
+      <form id="signup-form" class="form" style="display: none;">
+        <h2>Sign Up</h2>
+        <input type="text" id="signup-username" placeholder="Username" required>
+        <input type="password" id="signup-password" placeholder="Password" required>
+        <button type="submit">Sign Up</button>
+        <p class="message">Already registered? <a href="#" id="show-login">Sign In</a></p>
+      </form>
+    </div>
+    <div class="game" style="display: none;">
+      <div class="choices">
+        <button id="rock" class="choice">Rock</button>
+        <button id="paper" class="choice">Paper</button>
+        <button id="scissors" class="choice">Scissors</button>
+        <button id="lizard" class="choice">Lizard</button>
+        <button id="spock" class="choice">Spock</button>
+      </div>
+      <div id="result" class="result"></div>
+      <div id="stats" class="stats"></div>
+      <button id="logout" class="logout">Logout</button>
+    </div>
+  </div>
+  <audio id="win-sound">
+    <source src="https://www.soundjay.com/button/sounds/button-4.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="lose-sound">
+    <source src="https://www.soundjay.com/button/sounds/button-10.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="tie-sound">
+    <source src="https://www.soundjay.com/button/sounds/button-3.mp3" type="audio/mpeg">
+  </audio>
+  <script src="script.js"></script>
+</body>
+</html>
